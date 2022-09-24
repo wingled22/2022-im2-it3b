@@ -14,6 +14,8 @@
     <tr>
         <th>id</th>
         <th>Category name</th>
+        <th>Category stats</th>
+        <th>action</th>
     </tr>
     
     <?php
@@ -24,6 +26,8 @@
             echo "<tr>";
             echo "<td>$row->id</td>";
             echo "<td>$row->name</td>";
+            echo "<td>$row->status</td>";
+            echo "<td><a href=\"#\">Delete</a></td>";
             echo "</tr>";
         }
     
